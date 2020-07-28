@@ -20,22 +20,24 @@
 			<a class="relative" href="#About">Gmail</a>
 			<a class="relative" href="#Images">Images</a>
 			<!--apps symbol goes here?-->
+			<a class="relative" href="#Apps">
+                    <img id="apps" src="/apps-icon.png" alt="Google Apps"></a>	
  			<!--Sign In button/form goes here?--> 
 			<a id="signin" href="#SignIn">Sign In</a>
 		</nav>
 	</header> <!--end of header-->
  
 	<div id="content">
-
-		<div id="logo"> 
-			<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+		<img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
 		 			alt="Google logo">
-		</div>
-
-		<div id="search">
+		<div class="search">
 			<form action="#" method="get">
-				<input id="search-bar" type="text" placeholder=""> 
-				<br>
+                    <div class="wrap-mag-glass"> 
+                         <input class="search-bar" type="text" placeholder=""> 
+                         <img id="mag-glass" class="wrap-mag-glass"
+                          src="/mag-glass.png" alt="a magnifying glass">
+                    </div>
+
 				<input class="button" type="submit" value="Google Search">
 				<input class="button" type="submit" value="I&apos;m Feeling Lucky">
 		  	</form>

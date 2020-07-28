@@ -1,67 +1,107 @@
 
 
 body {  font-family: Arial, sans-serif; 
-        margin: 0;}
+        margin: 0; 
+        width: 100%;}
 
 
-header {        width: 100%;
-                margin: 1em 0; 
+        header {  width: 100%;
+                min-width: 800px;
+                margin: 0; 
                 padding: 0;
-                font-size: 1em; }
-    
-    nav a.relative {    display: inline-block;
-                        margin: 0;
-                        position: relative; }
+                font-size: 1em; 
+                position: absolute; 
+                top: 1em; 
+                display: block; }
 
-    nav#headright {  margin-right: 7px;
-                    float: right; 
-                    padding: 0px 1em; }
+                nav#headright { position: relative; 
+                                float: right; 
+                                padding: 0 1em; 
+                                width: auto; 
+                                margin-right: 10px;
+                                margin-top: 5px; }
          
-    nav#headleft  { margin-left: 7px; 
-                    float: left;
-                    padding: 0px 1em; }
+                nav#headleft  { position: relative; 
+                                float: left;
+                                padding: 0 1em;
+                                width: 200px; 
+                                margin-left: 10px;
+                                margin-top: 5px; }
 
-    nav a#signin {  background-color:#0080FF;
-                    font-size: small;
-                    color: white;
-                    font-weight: 600;
-                    border-radius: 1px; 
-                    padding: 0.6em 1.1em; }
+                nav a.relative { position: relative; 
+                                margin: 0 5px; 
+                                padding: 0 3px;  
+                                cursor: pointer; }
 
-div#content {   position: absolute; 
-                left: 25%; 
-                right: 25%; 
-                top: 20%; 
-                width: 800px;
-                margin:  0 auto; }
+        nav a:hover {text-decoration: underline;}
+
+                nav a#signin {  background-color:#0080FF;
+                                font-size: small;
+                                color: white;
+                                font-weight: 600;
+                                border-radius: 1px; 
+                                padding: 0.6em 1.1em; 
+                                cursor: default;
+                        
+                                margin-left: 7px; }
+
+                nav a#signin:hover {text-decoration: none;}
+                
+                img#apps { margin-bottom: -3px;
+                         width: 1.2em;
+                        background-color: transparent; 
+                        opacity: .6;}
+
+                img#apps:hover { opacity: 1;}
+
+#content {   position: relative; 
+                top: 5em;
+                max-width: 100%;
+                min-width: 900px;
+                margin:  75px 20px; }
             
-    img { display: block;
-        margin: 0 auto; }
+    #logo {  display: block; 
+                width: auto; ;
+                margin: 10px auto 30px auto; }
             
-    div#search { margin-top: 25px;}
-
-    form {  text-align: center; 
-            width: 800px;  
-            margin: 10px auto; }
-
-    input { font-size: .9em; 
+    .search {  text-align: center; 
+               width: 485px;  
+               margin: 0 auto;}
+    input   {  font-size: .9em; 
             color: rgb(48, 48, 48); }
-    input#search-bar {  position: relative; 
-                        width: 40em; 
-                        margin: 10px; 
-                        border-radius: 20px; 
-                        height: 2.7em; 
+    
+        .search-bar { width: 485px; 
+                         margin: 0;
+                        border-radius: 25px; 
+                        height: 43px; 
                         border-color: rgba(225, 225, 225, .7); 
-                        border-style: solid;}
-    input.button {  margin: 20px 2px; 
-                    padding: .7em;  
-                    background-color:rgba(240, 240, 240, .8); 
-                    border-style: hidden; 
-                    border-radius: 5px; 
-                    border-color: white;}
+                        border-style: solid;
+                        border-width: 1px;
+                        outline: none;
+                        text-indent: 10px; }
+
+                input.search-bar:hover { box-shadow: 1px 1px 10px 
+                                        rgb(230,230,230); }
+
+     .wrap-mag-glass {position: relative;}
+     .wrap-mag-glass img { position: absolute; left: 0; top: 0;   }
+   #mag-glass { width: 1em; height: 1em;  opacity: 0.3; margin: 1em; }
+        input.button {  margin: 30px 5px; 
+                        padding: 10px 12px ;  
+                        background-color:rgba(240, 240, 240, .8); 
+                        border-style: hidden; 
+                        border-radius: 5px; 
+                        border-color: transparent;
+                        color: rgb(110, 110, 110);}
+                input.button:hover {cursor: pointer; 
+                        color: black; 
+                        border-color: rgb(200, 200, 200); 
+                        border-width: 1px; 
+                        border-style: solid; }
 
 
-footer {width: auto; 
+footer {max-width: 100%;
+        min-width: 800px; 
         margin: 0; 
         position: fixed; 
         bottom: 0; 
@@ -74,10 +114,10 @@ footer {width: auto;
 
 nav#right { float: right; }
 nav#left  { float: left; }
-nav a.righta { margin: 7px 5px;}
-nav a.lefta { margin: 7px 5px; }
+nav a.righta { margin: 7px 10px;color: rgb(110, 110, 110); }
+nav a.lefta { margin: 7px 10px; color: rgb(110, 110, 110);}
 
-nav a { font-size: .8em;
-        padding: 8px;
-        color: rgb(107, 107, 107);
+nav a { font-size: 0.8em;
+        margin: 0;
+        color: rgb(110, 110, 110);
         text-decoration: none; }
